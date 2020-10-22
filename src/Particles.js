@@ -2,30 +2,14 @@ import React, { Component } from "react";
 import Particles from "react-particles-js";
 
 class Canvas extends Component {
-  state = { width: "0px", height: "0px" };
-  componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener("resize", this.updateWindowDimensions);
-  }
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateWindowDimensions);
-  }
-  updateWindowDimensions = () => {
-    this.setState({
-      width: `${window.innerWidth}px`,
-      height: `${window.innerHeight}px`
-    });
-  };
   render() {
-    const { width, height } = this.state;
-    console.log(width, height);
     return (
       <Particles
         {...this.state}
         params={{
           particles: {
             number: {
-              value: 50,
+              value: 20,
               density: {
                 enable: true,
                 value_area: 800
@@ -37,7 +21,7 @@ class Canvas extends Component {
             shape: {
               type: "circle",
               stroke: {
-                width: 0,
+                width: 1,
                 color: "#000000"
               },
               image: {
@@ -80,8 +64,8 @@ class Canvas extends Component {
             },
             move: {
               enable: true,
-              speed: 1,
-              direction: "none",
+              speed: 0.3,
+              direction: "right",
               random: false,
               straight: false,
               out_mode: "out",
@@ -98,10 +82,11 @@ class Canvas extends Component {
             events: {
               onhover: {
                 enable: true,
-                "mode": "repulse"
+                "mode": "grab"
               },
               onclick: {
-                enable: false
+                enable: true,
+                "mode": "repulse"
               },
               resize: true
             },
@@ -121,7 +106,7 @@ class Canvas extends Component {
               },
               repulse: {
                 distance: 200,
-                duration: 0.4
+                duration: 4
               },
               push: {
                 particles_nb: 4
