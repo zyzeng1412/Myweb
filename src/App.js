@@ -5,6 +5,7 @@ import theme from "./theme";
 import { ThemeProvider } from '@material-ui/core/styles';
 import Menu from './AppBar';
 import Hello from './Hello';
+import Works from './Works';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <div className="App">
         <Menu />
         <Hello />
+        <Works />
       </div>
     </ThemeProvider>
   );
