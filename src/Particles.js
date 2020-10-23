@@ -2,6 +2,19 @@ import React, { Component } from "react";
 import Particles from "react-particles-js";
 
 class Canvas extends Component {
+  state = { height: "0px" };
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener("resize", this.updateWindowDimensions);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions);
+  }
+  updateWindowDimensions = () => {
+    this.setState({
+      height: `${window.document.body.offsetHeight}px`
+    });
+  };
   render() {
     return (
       <Particles

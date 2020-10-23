@@ -33,10 +33,10 @@ export default function Hello() {
           "<strong>I'm Ziyun Zeng</strong>",
         ]}
       />
-      <Typography variant="h7">
+      <Typography variant="subtitle1">
         A software engineer <br />
       </Typography>
-      <Typography variant="h7">
+      <Typography variant="subtitle1">
         <Button color="inherit" className={classes.button}>Github</Button>
         /
         <Button color="inherit" className={classes.button}>Email</Button>
