@@ -9,3 +9,9 @@
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
 }
+
+@media screen and (max-width: 600px) {
+  .type-wrap, .typed-cursor {
+    font-size: 30px;
+  }
+}

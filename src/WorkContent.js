@@ -8,17 +8,17 @@ import { withStyles } from "@material-ui/styles";
 
 const styles = (theme) => ({
   root: {
-    maxWidth: 500,
+    maxWidth: 500, //Todo
     whiteSpace: "pre-wrap",
   },
   media: {
-    height: 400,
+    height: 400, //Todo
   },
 });
 
-const WorkContent = ({ classes, title, description }) => (
+const WorkContent = ({ classes, title, description, link }) => (
   <Card className={classes.root} elevation={0}>
-    <CardActionArea>
+    <CardActionArea href={link}>
       <CardMedia
         className={classes.media}
         image={process.env.PUBLIC_URL+"images/"+title+".png"}

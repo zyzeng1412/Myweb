@@ -37,9 +37,9 @@ export default function Hello() {
         A software engineer <br />
       </Typography>
       <Typography variant="subtitle1">
-        <Button color="inherit" className={classes.button}>Github</Button>
+        <Button color="inherit" className={classes.button} href={contacts["Github"]}>Github</Button>
         /
-        <Button color="inherit" className={classes.button}>Email</Button>
+        <Button color="inherit" className={classes.button} href={contacts["Email"]}>Email</Button>
       </Typography>
     </Box>
   );
