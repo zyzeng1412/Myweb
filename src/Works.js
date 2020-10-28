@@ -9,7 +9,7 @@ import Hidden from '@material-ui/core/Hidden';
 const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: "right",
-    // color: '#856BC1',
+    color: '#856BC1',
   },
   content: {
     textAlign: "left",
@@ -21,14 +21,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const works = ["Booka", "Matrix"]
+const works = ["Booka", "Matrix", "Around"]
 const descriptions = {
-  "Booka" : "Developed and maintained a full stack iOS application of customized booklist management; achieved 15k+ downloads and registrations. \nProvided key features such as keyword search, syncing on multiple devices, barcode and QR scanning. \nDesigned and developed frontend services using Swift and data storage and management using Realm Swift. \nImplemented the user interface by collaborating with designers; released multiple updates and improved user experience via communicating with customers to provide product guideline and collecting feedback.",
-  "Matrix" : "A location-based service android app for driving users to post alerts and receive nearby alerts such as speeding, police, traffic, drunk etc."
+  "Booka" : "A full stack iOS application of customized booklist management. \nAchieved 30k+ downloads and registrations. Get featured in Airport Community and Price Tag.",
+  "Matrix" : "A location-based service android app for driving users to post alerts and receive nearby alerts such as speeding, police, traffic, drunk etc.",
+  "Around" : "A twitter-like location based social network",
 }
 const links = {
   "Booka" : "https://apps.apple.com/us/app/booka-minimal-booklist/id1116150273",
-  "Matrix" : "https://github.com/zyzeng1412/Matrix-Android"
+  "Matrix" : "https://github.com/zyzeng1412/Matrix-Android",
+  "Around": "https://github.com/zyzeng1412/Around",
 }
 
 export default function Works() {

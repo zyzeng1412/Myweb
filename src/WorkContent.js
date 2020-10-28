@@ -5,14 +5,16 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from "@material-ui/styles";
+import Hidden from '@material-ui/core/Hidden';
 
 const styles = (theme) => ({
   root: {
-    maxWidth: 500, //Todo
+    maxWidth: 500, 
     whiteSpace: "pre-wrap",
+    paddingBottom: 40,
   },
   media: {
-    height: 400, //Todo
+    height: 350, 
   },
 });
 
@@ -25,9 +27,11 @@ const WorkContent = ({ classes, title, description, link }) => (
         title={title}
       />
       <CardContent>
-        <Typography gutterBottom variant="subtitle1">
-          {title}
-        </Typography>
+        <Hidden lgUp>
+          <Typography gutterBottom variant="subtitle1">
+            {title}
+          </Typography>
+        </Hidden>
         <Typography variant="body2" color="textSecondary" component="p">
           {description}
         </Typography>
