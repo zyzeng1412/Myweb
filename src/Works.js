@@ -25,7 +25,7 @@ const works = ["Booka", "Matrix", "Around"]
 const descriptions = {
   "Booka" : "A full stack iOS application of customized booklist management. \nAchieved 30k+ downloads and registrations. Get featured in Airport Community and Price Tag.",
   "Matrix" : "A location-based service android app for driving users to post alerts and receive nearby alerts such as speeding, police, traffic, drunk etc.",
-  "Around" : "A twitter-like location based social network",
+  "Around" : "A twitter-like location based social network, users can create posts with images and get nearby posts",
 }
 const links = {
   "Booka" : "https://apps.apple.com/us/app/booka-minimal-booklist/id1116150273",
