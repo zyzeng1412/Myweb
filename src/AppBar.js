@@ -27,7 +27,7 @@ export default function Menu() {
     <div className={classes.root}>
       <AppBar position="static" elevation={0} className={classes.menu}>
         <Toolbar>
-          <Button color="inherit" className={classes.button} href="ziyunzeng.com">Ziyun Zeng</Button>
+          <Button color="inherit" className={classes.button} href=".">Ziyun Zeng</Button>
           <Button color="inherit" className={classes.button} href={process.env.PUBLIC_URL+"Resume.pdf"} style={{marginLeft: 'auto'}}>Resume</Button>
         </Toolbar>
       </AppBar>
