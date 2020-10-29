@@ -39,10 +39,10 @@ export default function Works() {
   return(
     <div>
       {works.map((work, index) => (
-      <div  key={index}>
+      <div key={index}>
           <Grid container>
            <Hidden mdDown>
-            <Grid item md={5} className={classes.title}> 
+            <Grid item lg={5} className={classes.title}> 
               <Box style={{paddingRight:50}}>
                 <Typography gutterBottom variant="subtitle1">
                   {work}
@@ -50,7 +50,7 @@ export default function Works() {
               </Box>
             </Grid>
             </Hidden>
-            <Grid item xs={12} md={7} className={classes.content}>
+            <Grid item xs={12} lg={7} className={classes.content}>
               <Box borderLeft={1} style={{paddingLeft:20, paddingRight:20}} className={classes.contentbox}>
                 <WorkContent title={work} description={descriptions[work]} link={links[work]}/>
               </Box>

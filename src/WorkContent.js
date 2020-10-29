@@ -6,6 +6,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from "@material-ui/styles";
 import Hidden from '@material-ui/core/Hidden';
+import Grid from '@material-ui/core/Grid'
 
 const styles = (theme) => ({
   root: {
@@ -16,9 +17,20 @@ const styles = (theme) => ({
   media: {
     height: 350, 
   },
+  grid: {
+    [theme.breakpoints.down('md')]: {
+      alignItems:"center",
+    },
+  },
 });
 
 const WorkContent = ({ classes, title, description, link }) => (
+  <Grid
+  container
+  spacing={0}
+  direction="column"
+  className={classes.grid}
+ >
   <Card className={classes.root} elevation={0}>
     <CardActionArea href={link}>
       <CardMedia
@@ -38,6 +50,7 @@ const WorkContent = ({ classes, title, description, link }) => (
       </CardContent>
     </CardActionArea>
   </Card>
+  </Grid>
 );
 
 export default withStyles(styles)(WorkContent);
