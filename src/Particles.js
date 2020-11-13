@@ -22,20 +22,20 @@ class Canvas extends Component {
         params={{
           particles: {
             number: {
-              value: 20,
+              value: 12,
               density: {
                 enable: true,
                 value_area: 800
               }
             },
             color: {
-              value: "#aaa"
+              value: "#856BC1"
             },
             shape: {
               type: "circle",
               stroke: {
                 width: 1,
-                color: "#000000"
+                color: "#aaa"
               },
               image: {
                 src: "img/github.svg",
@@ -54,18 +54,18 @@ class Canvas extends Component {
               }
             },
             size: {
-              value: 1,
+              value: 4,
               random: true,
               anim: {
                 enable: false,
                 speed: 2,
-                size_min: 0.1,
+                size_min: 1,
                 sync: false
               }
             },
             line_linked: {
               enable_auto: true,
-              distance: 100,
+              distance: 150,
               color: "#aaa",
               opacity: 0.4,
               width: 1,
@@ -77,7 +77,7 @@ class Canvas extends Component {
             },
             move: {
               enable: true,
-              speed: 0.3,
+              speed: 0.15,
               direction: "right",
               random: false,
               straight: false,
