@@ -21,14 +21,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const works = ["Booka", "Matrix", "Around"]
+const works = ["Booka", "Bucket", "Matrix", "Around"]
 const descriptions = {
   "Booka" : "A full stack iOS application of customized booklist management. \nAchieved 30k+ downloads and registrations. Get featured in Airport Community and Price Tag.",
+  "Bucket" : "A bucket list iOS application motivating people to finish targets and helping users track and record goals.",
   "Matrix" : "A location-based service android app for driving users to post alerts and receive nearby alerts such as speeding, police, traffic, drunk etc.",
   "Around" : "A twitter-like location based social network, users can create posts with images and get nearby posts",
 }
 const links = {
   "Booka" : "https://apps.apple.com/us/app/booka-minimal-booklist/id1116150273",
+  "Bucket" : "https://testflight.apple.com/join/KyDQCGdN",
   "Matrix" : "https://github.com/zyzeng1412/Matrix-Android",
   "Around": "https://github.com/zyzeng1412/Around",
 }
