@@ -5,11 +5,19 @@ import Box from '@material-ui/core/Box';
 import WorkContent from './WorkContent';
 import Typography from '@material-ui/core/Typography';
 import Hidden from '@material-ui/core/Hidden';
+import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: "right",
     color: '#856BC1',
+  },
+  button: {
+    color: '#856BC1',
+    textTransform: 'none',
+    "&:hover": {
+      background: 'none',
+    },
   },
   content: {
     textAlign: "left",
@@ -46,9 +54,11 @@ export default function Works() {
            <Hidden mdDown>
             <Grid item lg={5} className={classes.title}> 
               <Box style={{paddingRight:50}}>
-                <Typography gutterBottom variant="subtitle1">
-                  {work}
-                </Typography>
+                <Button href={links[work]} className={classes.button}>
+                  <Typography gutterBottom variant="h6">
+                    {work}
+                  </Typography>
+                </Button>
               </Box>
             </Grid>
             </Hidden>
