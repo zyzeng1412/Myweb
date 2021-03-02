@@ -30,7 +30,7 @@ const descriptions = {
 }
 const links = {
   "Booka" : "https://apps.apple.com/us/app/booka-minimal-booklist/id1116150273",
-  "Bucket" : "https://testflight.apple.com/join/KyDQCGdN",
+  "Bucket" : "https://apps.apple.com/us/app/bucket-achieve-your-goals/id1534447271",
   "Matrix" : "https://github.com/zyzeng1412/Matrix-Android",
   "Around": "https://github.com/zyzeng1412/Around",
 }
